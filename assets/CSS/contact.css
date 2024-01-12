@@ -1,0 +1,112 @@
+.contact-section
+{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.contact-main{
+    width: 90%;
+    height: 120px;
+    margin-top: 50px;
+}
+
+.contact-one{
+    text-align: center;
+    width: 20%;
+    height: 120px;
+}
+
+.contact-one h3{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.contact-two{
+    width: 80%;
+    height: 120px;
+}
+
+.contact-two a{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-two a:hover{
+    text-decoration: underline;
+}
+
+.social-links{
+    width: 65%;
+}
+
+.contact-two .social-links h4 a{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.contact-two .social-links h4 a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1190px) 
+{
+    .contact-main .contact-two a{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 970px) 
+{
+    .contact-one{
+        width: 100%;
+        text-align: center;
+        height: 50px;
+    }
+
+    .social-links{
+        width: 100%;
+    }
+
+    .contact-two{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px) 
+{
+    .contact-main .contact-two a{
+        font-size: 1.2rem;
+    }
+
+    .contact-two .social-links h4 a{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 560px) 
+{
+    .contact-main .contact-two a{
+        font-size: 1rem;
+    }
+
+    .contact-two{
+        width: 100%
+    }
+}
+
+
+@media screen and (max-width: 300px) 
+{
+    .contact-main .contact-two a{
+        font-size: 0.8rem;
+    }
+
+    .contact-two .social-links h4 a{
+        font-size: 0.5rem;
+    }
+}

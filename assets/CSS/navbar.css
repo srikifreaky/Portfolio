@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-sa
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-st
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.row-c
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row-sb
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-main{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(204, 204, 204, 0.432);
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+a
+{
+    list-style: none;
+    text-decoration: none;
+    color: grey;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover{
+    color: black;
+    transition: color 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.ham-hover
+{
+    list-style: none;
+    text-decoration: none;
+    color: grey;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ham-hover:hover{
+    color: black;
+    transition: color 0.3s ease-in-out;
+    font-size: 0.8rem;
+}
+
+
+span{
+    font-size: 0.8rem;
+}
+
+.nav-links{
+    width: 800px;
+    position: relative;
+    left:100px;
+}
+
+#hamberger-menu{
+    display: none;
+}
+
+#ham-links{
+    display: none;
+}
+
+
+@media screen and (max-width: 1300px) 
+{
+    .nav-links{
+        width: 550px;
+        position: relative;
+        left:50px;
+    }
+}
+
+@media screen and (max-width: 400px) 
+{
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-main{
+        height: 50px;
+    }
+
+    .logo-link{
+        position: relative;
+        right: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1050px) 
+{
+    .nav-links{
+        width: 450px;
+        position: relative;
+        left:40px;
+    }
+
+}
+
+@media screen and (max-width: 970px) 
+{
+
+    .nav-main{
+        height: 150px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    #hamberger-menu{
+        display: block;
+    }
+
+    .logo{
+        position: relative;
+        right: 25px
+    }
+
+    #hamberger-menu{
+        position: relative;
+        left: 30px;
+    }
+}
+
+#top{
+    width: 45px;
+    height: 3px;
+    background-color: black;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+#bottom{
+    width: 45px;
+    height: 3px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+#top, #bottom {
+    width: 45px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: transform 0.5s, bottom 0.5s;
+}
+
+.ham-bar{
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+#ham-links{
+    padding: 20px 0px 20px 0px;
+    height: 50px;
+    background-color: rgba(224, 224, 224, 0.466);
+}
+
+.ham-bar{
+    font-size: 0.8rem;
+}
+
+#ham-links {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
